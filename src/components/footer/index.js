@@ -2,16 +2,16 @@ import React from "react";
 //?components
 import Dots from "./dots";
 //?styles
-import styles from "./style.module.css";
+import "./style.css";
 
 const Footer = () => {
    return (
-      <div className={styles.footer}>
+      <div className="footer">
          <div>
             <span>Back</span>
          </div>
          <Dots count={5} />
-         <div className={styles.active}>
+         <div className="active">
             <span>Done</span>
          </div>
       </div>

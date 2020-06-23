@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 //?styles
-import styles from "./style.module.css";
+import "./style.css";
 
 const Dots = ({ count = 5 }) => {
    let DotsArray = new Array(count).fill(1);
    return (
-      <div className={styles.dots_container}>
+      <div className="dots_container">
          {DotsArray.map((dot, index) => {
-            return <div key={index} className={styles.dot} />;
+            return <div key={index} className={index === count - 1 ? "dot active_dot" : "dot"} />;
          })}
       </div>
    );

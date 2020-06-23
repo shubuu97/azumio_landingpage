@@ -34,7 +34,7 @@
    margin-right: 10px;
 }
 
-.dot:hover {
+.active_dot {
    height: 10px;
    width: 10px;
    background-color: #19327a;
